@@ -87,7 +87,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Remove assignment from a user
+  // Remove reactiom from a user
   async removeReaction(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(

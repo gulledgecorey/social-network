@@ -90,7 +90,7 @@ module.exports = {
     }
   },
 
-  // Add an assignment to a user
+  // Add an friend to a user
   async addFriend (req, res) {
     console.log(req.body);
 
@@ -112,7 +112,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Remove assignment from a user
+  // Remove friend from a user
   async removeFriend(req, res) {
     try {
       const user = await User.findOneAndUpdate(
